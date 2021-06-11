@@ -12,7 +12,6 @@ const mongoose = require('mongoose');
 
 const Movies = require('./models/movies');
 
-//const url = 'mongodb://localhost:27017/conFusion';
 const url = "mongodb+srv://arvind:pamoori@cluster0.90h64.mongodb.net/movieinfo?retryWrites=true&w=majority";
 const connect  = mongoose.connect(url);
 
