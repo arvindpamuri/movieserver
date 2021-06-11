@@ -37,7 +37,6 @@ movieRouter.route('/updateGenre/:id')
 })
 
 .put((req,res,next) => {
-    console.log(req);
     Movies.findByIdAndUpdate({_id: req.params.id}, {
         Genre: req.body.Genre
     }, {new: true})
